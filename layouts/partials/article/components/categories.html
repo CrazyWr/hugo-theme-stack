@@ -1,0 +1,7 @@
+{{ if .Params.categories }}
+<section class="article-category">
+    {{ range (.GetTerms "categories") }}
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+</section>
+{{ end }}
